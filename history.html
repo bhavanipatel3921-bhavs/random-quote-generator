@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📚 Quote History</h1>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Quote</th>
+            <th>Author</th>
+        </tr>
+
+        {% for q in quotes %}
+        <tr>
+            <td>{{ q[0] }}</td>
+            <td>{{ q[1] }}</td>
+            <td>{{ q[2] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <br>
+
+    <a href="/" class="btn">
+        Back To Home
+    </a>
+
+</div>
+
+</body>
+</html>

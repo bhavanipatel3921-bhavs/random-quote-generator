@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📖 Random Quote Generator</h1>
+
+    <div class="quote-box">
+
+        <p class="quote">
+            "{{ quote }}"
+        </p>
+
+        <h3>- {{ author }}</h3>
+
+    </div>
+
+    <br>
+
+    <a href="/" class="btn">
+        New Quote
+    </a>
+
+    <a href="/history" class="btn">
+        View History
+    </a>
+
+</div>
+
+</body>
+</html>
